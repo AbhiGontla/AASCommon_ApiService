@@ -14,12 +14,16 @@ namespace AASCommonApp_ApiService
             // Web API routes
             config.MapHttpAttributeRoutes();
 
+
+
+
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                //routeTemplate: "{controller}/{action}/{id}",
-                routeTemplate: "{url}/{id}",
-                defaults: new { id = RouteParameter.Optional }
+                routeTemplate: "{controller}/{action}/{id}"
+                //routeTemplate: "",
+                
             );
+           
         }
     }
 }
